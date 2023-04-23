@@ -56,7 +56,7 @@ namespace SexShop
             Console.WriteLine("Цена: " + HorsesAphrodisiacs.Price);
             Console.WriteLine("Производитель: " + HorsesAphrodisiacs.Manufacturer);
             Console.WriteLine("Состав: " + HorsesAphrodisiacs.Composition);
-            Console.WriteLine(new String('-', 25));
+            Console.WriteLine(new String('-', 24));
 
             Aphrodisiacs FriendAphrodisiacs = new Aphrodisiacs("Завали Подругу",
                 700,
