@@ -106,7 +106,12 @@ namespace SexShop
                 Console.WriteLine("Выберете номер товара и нажмите Enter:");
 
                 string str = Console.ReadLine();
-                int productNumber = Convert.ToInt32(str);
+                bool isNum = int.TryParse(str, out int productNumber);
+                if (!isNum)
+                {
+                    Console.WriteLine("empty string");
+                    continue;
+                }
 
                 if (productNumber >= 0 && productNumber < products.Length)
                 {
