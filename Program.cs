@@ -104,7 +104,7 @@ namespace SexShop
                 HorsesAphrodisiacs,
                 FriendAphrodisiacs,
                 vasilin,
-                VandarkholmeBondage
+                
             };
 
             Informer informer = new Informer();
