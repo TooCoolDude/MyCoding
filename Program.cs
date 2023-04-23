@@ -30,6 +30,20 @@ namespace SexShop
             Console.WriteLine("Материал: " + gusDolls.Material);
             Console.WriteLine(new String('-', 25));
 
+            Bondage VandarkholmeBondage = new Bondage(
+                size: 50,
+                name: "Sexual Weapons",
+                price: 300000,
+                manufacturer: "Billy.Inc"
+                );
+
+            Console.WriteLine("Бондаж:");
+            Console.WriteLine("Название: " + VandarkholmeBondage.Name);
+            Console.WriteLine("Цена: " + VandarkholmeBondage.Price);
+            Console.WriteLine("Производитель: " + VandarkholmeBondage.Manufacturer);
+            Console.WriteLine("Размер: " + VandarkholmeBondage.Size);
+            Console.WriteLine(new String('-', 25));
+
             Condoms DirtyJoes = new Condoms(
                 "Грязный Джо",
                 400,
@@ -56,7 +70,7 @@ namespace SexShop
             Console.WriteLine("Цена: " + HorsesAphrodisiacs.Price);
             Console.WriteLine("Производитель: " + HorsesAphrodisiacs.Manufacturer);
             Console.WriteLine("Состав: " + HorsesAphrodisiacs.Composition);
-            Console.WriteLine(new String('-', 24));
+            Console.WriteLine(new String('-', 25));
 
             Aphrodisiacs FriendAphrodisiacs = new Aphrodisiacs("Завали Подругу",
                 700,
@@ -89,7 +103,8 @@ namespace SexShop
                 DirtyJoes,
                 HorsesAphrodisiacs,
                 FriendAphrodisiacs,
-                vasilin
+                vasilin,
+                VandarkholmeBondage
             };
 
             Informer informer = new Informer();
